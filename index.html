@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> To do List </title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1> ATIVIDADES DIARIAS </h1>
+        </header>
+
+        <div id="acoes" class="btn-hide">
+            <button id="add-tarefa" class="btn-adicionar" >
+                <i class="fa-solid fa-plus adicionar"></i>
+            </button>
+            <button id="search-tarefa" class="btn-pesquisar">
+                <i class="fa-solid fa-magnifying-glass buscar"></i>
+            </button>
+        </div>
+        
+        <form id="adicionar" class="hide">
+            <h2> Digite sua tarefa </h2>
+            <div class="form-control">
+                <input 
+                    type="text" 
+                    id="adicionar-input" 
+                    placeholder="Planejo realizar">
+                <button 
+                    class="btn-adicionar"
+                    type="submit">
+                    <i class="fa-solid fa-plus adicionar"></i>
+                </button>
+            </div>
+        </form>
+
+        <form id="form-editar" class="hide">
+            <h2> Edite sua tarefa </h2>
+            <div class="form-control">
+                <input 
+                    type="text" 
+                    id="editar-input" 
+                >
+                <button 
+                    type="submit"
+                    id="confirm-edicao"
+                    >
+                    <i class="fa-solid fa-check-double"></i>
+                </button>
+            </div>
+            <button id="cancelar-edicao"> 
+                Cancelar 
+            </button>
+        </form>
+
+        <form id="pesquisar" class="hide-pesquisar">
+            <h2> Buscar tarefa </h2>
+            <div class="form-control">
+                <input 
+                   type="text" 
+                   id="pesquisar-input"> 
+                <button 
+                   class="btn-pesquisar"
+                   type="submit">
+                   <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </form>
+
+        <div id="listas-tarefas">
+            <!--
+                <div class="tarefas">
+                    <p> Aprender Java </p>
+                    <button class="feito">
+                        <i class="fa-solid fa-check"></i>
+                </button>
+                <button class="editar">
+                    <i class="fa-solid fa-pen-to-square"></i>    
+                </button>
+                <button class="apagar">
+                    <i class="fa-solid fa-trash"></i>
+                </button>
+            </div>
+            
+            <div class="tarefas">
+                <p> Aprender Python </p>
+                <button class="feito">
+                    <i class="fa-solid fa-check"></i>
+                </button>
+                <button class="editar">
+                    <i class="fa-solid fa-pen-to-square"></i>    
+                </button>
+                <button class="apagar">
+                    <i class="fa-solid fa-trash"></i>
+                </button>
+            </div>
+            
+            <div class="tarefas">
+                <p> Aprender HTML </p>
+                <button class="feito">
+                    <i class="fa-solid fa-check"></i>
+                </button>
+                <button class="editar">
+                    <i class="fa-solid fa-pen-to-square"></i>    
+                </button>
+                <button class="apagar">
+                    <i class="fa-solid fa-trash"></i>
+                </button>
+            </div>
+            -->
+        </div>
+    </div>
+</body>
+<script src="./js/script.js" defer></script>
+
+</html>
